@@ -38,8 +38,9 @@ export default function Contact() {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="text-[var(--muted-foreground)] text-sm leading-relaxed font-light max-w-sm"
           >
-            Seeking AI/ML or Generative AI internships to apply and grow
-            my skills in production environments. Open to full-stack AI roles.
+            Currently building AI systems as an AI Developer. Open to
+            collaborations, freelance projects, and full-time AI/ML
+            opportunities.
           </motion.p>
         </div>
 

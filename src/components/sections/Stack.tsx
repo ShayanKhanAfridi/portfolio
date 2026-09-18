@@ -7,9 +7,9 @@ const STACK = [
   {
     category: "LANGUAGES",
     items: [
-      { name: "Python", projects: ["HR Automation", "Pearls AQI", "AI Recruiter"] },
+      { name: "Python", projects: ["Softira", "HR Automation", "Pearls AQI", "AI Recruiter"] },
       { name: "JavaScript", projects: ["WebGen IDE", "ArtistryHub"] },
-      { name: "TypeScript", projects: ["WebGen IDE"] },
+      { name: "TypeScript", projects: ["Softira", "WebGen IDE"] },
       { name: "HTML / CSS", projects: ["ArtistryHub", "WebGen IDE"] },
       { name: "Java", projects: [] },
       { name: "SQL", projects: ["ArtistryHub"] },
@@ -32,18 +32,34 @@ const STACK = [
   {
     category: "GENERATIVE AI",
     items: [
+      { name: "LangChain", projects: [] },
+      { name: "LangGraph", projects: ["Softira"] },
+      { name: "Retrieval-Augmented Generation (RAG)", projects: [] },
+      { name: "Embeddings", projects: [] },
+      { name: "Agentic AI", projects: ["Softira", "HR Automation"] },
+      { name: "Multi-Agent Workflows", projects: ["Softira"] },
+      { name: "Chatbot Development", projects: [] },
       { name: "LLM Foundations", projects: ["AI Recruiter"] },
       { name: "Gemini API", projects: ["HR Automation", "WebGen IDE", "Kynetic", "AI Recruiter"] },
-      { name: "Whisper STT", projects: ["AI Recruiter"] },
-      { name: "HuggingFace TTS", projects: ["AI Recruiter"] },
       { name: "Prompt Engineering", projects: ["HR Automation", "WebGen IDE", "Kynetic", "AI Recruiter"] },
+    ],
+  },
+  {
+    category: "VOICE AI",
+    items: [
+      { name: "Vapi", projects: [] },
+      { name: "Retell AI", projects: [] },
+      { name: "ElevenLabs", projects: [] },
+      { name: "Speech-to-Text (STT)", projects: ["AI Recruiter"] },
+      { name: "Text-to-Speech (TTS)", projects: ["AI Recruiter"] },
     ],
   },
   {
     category: "FRAMEWORKS",
     items: [
+      { name: "FastAPI", projects: ["Softira"] },
+      { name: "Next.js", projects: ["Softira"] },
       { name: "React", projects: ["ArtistryHub", "WebGen IDE", "Kynetic", "AI Recruiter"] },
-      { name: "Next.js", projects: [] },
       { name: "Node.js", projects: ["ArtistryHub", "WebGen IDE", "AI Recruiter"] },
       { name: "Express", projects: ["ArtistryHub", "AI Recruiter"] },
       { name: "Streamlit", projects: ["Pearls AQI"] },
@@ -52,6 +68,7 @@ const STACK = [
   {
     category: "DATABASES",
     items: [
+      { name: "Vector Databases (Pinecone, FAISS, ChromaDB)", projects: [] },
       { name: "MongoDB", projects: ["ArtistryHub"] },
       { name: "PostgreSQL", projects: ["AI Recruiter"] },
       { name: "MySQL", projects: [] },

@@ -5,6 +5,17 @@ import { motion } from "framer-motion";
 const EXPERIENCE = [
   {
     id: "EXP.01",
+    role: "AI Developer",
+    company: "Wigatech Solutions",
+    period: "Aug 2026 — Present",
+    tasks: [
+      "Build and deploy production AI solutions including LLM applications, RAG pipelines, and agentic workflows using LangChain, LangGraph, and FastAPI.",
+      "Develop AI chatbots and voice agents using Vapi, Retell, and ElevenLabs for automated customer interaction and lead handling.",
+      "Design n8n automation workflows integrating third-party APIs, databases, and LLMs to replace manual business processes.",
+    ],
+  },
+  {
+    id: "EXP.02",
     role: "Data Science Intern",
     company: "10 Pearls",
     period: "Apr 2026 — Jul 2026",
@@ -15,7 +26,7 @@ const EXPERIENCE = [
     ],
   },
   {
-    id: "EXP.02",
+    id: "EXP.03",
     role: "Data Science and Analytics Intern",
     company: "DevelopersHub Corporation",
     period: "Mar 2026 — Apr 2026",
@@ -26,7 +37,7 @@ const EXPERIENCE = [
     ],
   },
   {
-    id: "EXP.03",
+    id: "EXP.04",
     role: "Data Science Intern",
     company: "Creovata",
     period: "May 2025 — Jul 2026",

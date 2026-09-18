@@ -5,9 +5,34 @@ import { ArrowUpRight, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
-const PROJECTS = [
+type ProjectItem = {
+  id: string;
+  title: string;
+  subtitle: string;
+  status: string;
+  desc: string;
+  tags: string[];
+  links: { github?: string; video?: string; live?: string };
+  visual: string;
+  pipeline?: string[];
+  ide?: string[];
+  forecast?: { day: string; aqi: number; level: string }[];
+};
+
+const PROJECTS: ProjectItem[] = [
   {
     id: "01",
+    title: "SOFTIRA",
+    subtitle: "AGENTIC AI LEAD GENERATION SYSTEM",
+    status: "COMPLETE",
+    desc: "Built a multi-agent system using LangGraph that generates leads, qualifies them against defined criteria, and drafts personalized outreach emails, with a FastAPI backend and a Next.js dashboard for managing pipelines and reviewing/editing drafts before sending.",
+    tags: ["LangGraph", "FastAPI", "Next.js", "Agentic AI"],
+    links: {},
+    visual: "pipeline",
+    pipeline: ["LEAD GEN", "QUALIFY", "LANGGRAPH", "DRAFT EMAIL", "DASHBOARD"],
+  },
+  {
+    id: "02",
     title: "WEBGEN IDE",
     subtitle: "AI-POWERED WEBSITE BUILDER",
     status: "COMPLETE",
@@ -18,7 +43,7 @@ const PROJECTS = [
     ide: ["PROMPT", "→ AI", "→ CODE", "→ PREVIEW"],
   },
   {
-    id: "02",
+    id: "03",
     title: "PEARLS AQI PREDICTOR",
     subtitle: "AIR QUALITY FORECASTING SYSTEM",
     status: "COMPLETE",
@@ -29,7 +54,7 @@ const PROJECTS = [
     forecast: [{ day: "TODAY", aqi: 82, level: "MODERATE" }, { day: "DAY 2", aqi: 76, level: "MODERATE" }, { day: "DAY 3", aqi: 91, level: "MODERATE" }],
   },
   {
-    id: "03",
+    id: "04",
     title: "KYNETIC",
     subtitle: "AI FITNESS COACH · COMPUTER VISION",
     status: "COMPLETE",
@@ -40,7 +65,7 @@ const PROJECTS = [
     pipeline: ["WEBCAM", "MEDIAPIPE", "POSE", "GEMINI", "COACH"],
   },
   {
-    id: "04",
+    id: "05",
     title: "HR AUTOMATION SYSTEM",
     subtitle: "AGENTIC AI + MACHINE LEARNING",
     status: "COMPLETE",
@@ -51,7 +76,7 @@ const PROJECTS = [
     pipeline: ["JOB POST", "RESUME SCAN", "SHORTLIST", "ML EVAL", "REPORT"],
   },
   {
-    id: "05",
+    id: "06",
     title: "AI RECRUITER",
     subtitle: "VOICE AI INTERVIEW PLATFORM",
     status: "COMPLETE",
@@ -62,7 +87,7 @@ const PROJECTS = [
     pipeline: ["SESSION", "GEMINI", "WHISPER STT", "HF TTS", "SCORE"],
   },
   {
-    id: "06",
+    id: "07",
     title: "ARTISTRYHUB",
     subtitle: "FULL-STACK DIGITAL ART GALLERY",
     status: "COMPLETE",
@@ -238,7 +263,7 @@ export default function Projects() {
   );
 }
 
-function ProjectVisual({ project }: { project: typeof PROJECTS[0] }) {
+function ProjectVisual({ project }: { project: ProjectItem }) {
   if (project.visual === "pipeline" || project.visual === "recruiter") {
     return (
       <div className="flex flex-col gap-0 self-start">

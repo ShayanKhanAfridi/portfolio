@@ -26,9 +26,9 @@ export default function System() {
           </h2>
         </div>
         <p className="text-[var(--muted-foreground)] text-sm leading-relaxed max-w-sm font-light self-end">
-          Software Engineering student with hands-on internship experience in ML,
-          data science, AI APIs, and full-stack development. Currently expanding
-          into Generative AI, RAG, and vector databases.
+          AI Engineer building agentic systems, LLM applications, and voice AI
+          agents — with a strong foundation in machine learning, data science,
+          and full-stack development.
         </p>
       </div>
 

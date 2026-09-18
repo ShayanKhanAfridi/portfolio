@@ -6,8 +6,8 @@ import { useEffect, useRef, useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 
 const IDENTITY_ITEMS = [
-  { label: "ROLE", value: "AI / SOFTWARE ENGINEER" },
-  { label: "FOCUS", value: "LLM · RAG · AGENTS · AUTOMATION" },
+  { label: "ROLE", value: "AI ENGINEER" },
+  { label: "FOCUS", value: "AGENTIC AI · LLM · RAG · VOICE AI · AUTOMATION" },
   { label: "LOCATION", value: "KARACHI, PK" },
   { label: "STATUS", value: "BUILDING", accent: true },
 ];
@@ -83,9 +83,9 @@ export default function Hero() {
             transition={{ delay: 0.35, duration: 0.6 }}
             className="text-[var(--muted-foreground)] text-base max-w-lg leading-relaxed font-light"
           >
-            I build AI-powered applications and LLM-based systems, combining
-            Generative AI, RAG, AI agents, automation, and full-stack development
-            to create practical software solutions.
+            I build agentic AI systems, LLM applications, RAG pipelines, and
+            voice AI agents — combining cutting-edge Generative AI with
+            robust automation and full-stack development.
           </motion.p>
 
           <motion.div
@@ -154,7 +154,7 @@ export default function Hero() {
           ))}
           <div className="mt-4 pt-4 border-t border-[var(--border)] flex items-center gap-2">
             <span className="inline-block w-1.5 h-1.5 rounded-full bg-[var(--accent)]" />
-            <span className="label text-[var(--accent)]">SEEKING INTERNSHIPS 2026</span>
+            <span className="label text-[var(--accent)]">OPEN TO OPPORTUNITIES</span>
           </div>
         </motion.div>
       </div>

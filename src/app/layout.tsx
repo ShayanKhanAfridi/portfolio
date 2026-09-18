@@ -11,10 +11,10 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mon
 export const metadata: Metadata = {
   title: "Shayan Khan Afridi — AI / Software Engineer",
   description:
-    "Portfolio of Shayan Khan Afridi, a Software Engineering student building AI-powered applications, LLM systems, automation workflows and full-stack software.",
+    "Portfolio of Shayan Khan Afridi, an AI Engineer building agentic AI systems, LLM applications, RAG pipelines, voice AI agents, and full-stack software.",
   openGraph: {
     title: "Shayan Khan Afridi — AI / Software Engineer",
-    description: "Building AI-powered applications, LLM systems, automation and full-stack software.",
+    description: "Building agentic AI systems, LLM applications, voice AI agents, and full-stack software.",
     type: "website",
   },
 };
